@@ -30,8 +30,8 @@ h1{
     padding:0;
     font-weight: bold;
 }
-.loginbox input{
-    width:100%;
+.loginbox{
+    /* width:100%; */
     margin-bottom: 20px;
 }
 .loginbox input[type="text"],input[type="password"]
@@ -40,6 +40,7 @@ h1{
     background: transparent;
     outline: none;
     height: 40px;
+    width:100%;
 }
 .loginbox input[type="submit"]{
     border: none;
@@ -61,7 +62,6 @@ h1{
 }
 span.psw {
     float: right;
-    padding-top: 16px;
   }
   .container {
     padding: 16px;
