@@ -1,0 +1,23 @@
+body{
+    margin:0;
+    padding:0;
+    background:#f6f8f9;
+    
+}
+.main{
+    margin: auto;
+    width:820px;
+    height:90px;
+    background-color:#fff;
+}
+.flex-container {
+    padding: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color:#fff;
+    float: right;
+    text-align: center;
+  }
+  .photo{
+      border-radius: 50%;
+  }
