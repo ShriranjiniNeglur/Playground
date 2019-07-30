@@ -1,0 +1,24 @@
+
+body{
+    margin:auto;
+    padding:190px;
+    background: darkgray;
+}
+.loginbox{
+    top:40%;
+    border: 0px;
+    padding:5px;
+    background: #fff;
+    width:350px;
+    height: 140px;
+    margin:auto;
+    color:#434343;
+}
+.email{
+    background: transparent;
+    outline: none;
+    height: 400px;
+    width:100%;
+    size: 120px;
+}
+
