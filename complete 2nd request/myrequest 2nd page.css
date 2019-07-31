@@ -1,0 +1,226 @@
+body{
+    margin:0;
+    padding:0px 0px 0px 0px;
+    background:#f6f8f9;
+    
+}
+.flex-burger{
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    width:50px;
+    height:50px;
+    padding: 0px 0px 0px 20px;
+    align-items: center;
+    justify-content: space-between;
+    float: left;
+}
+.flex-container{
+    padding:0px 20px 0px 0px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   background: #fff;
+   justify-content: flex-end;
+   height: 50px;
+
+}
+.photo{
+    border-radius: 50%;
+}
+.flex-request{
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    width:1290px;
+    height:70px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 10px 18px #888888;
+    padding: 10px;
+
+}
+ input[type="submit"]{
+    margin: 0px 10px 0px 0px;
+    border: none;
+    outline:none;
+    height: 40px;
+    background:#32BDD2;
+    color:#fff;
+    font-size:15px;
+    border-radius:20px;
+    width: 150px;
+}
+.flex-request p {
+    margin: 0px 0px 0px 30px;
+    width:89px;
+    padding: 8px;
+    border-bottom:solid #32BDD2;
+ }
+  .fake-input {
+       position: relative;
+        width:510px; 
+    }
+.fake-input input {
+    right:1450px;
+     border-style: ridge;
+     border-radius: 40px;
+      background-color:#fff; 
+      display:block;
+       width:550px;
+       height: 40px;
+        box-sizing: border-box ;
+ }
+.fake-input img { 
+    position: absolute; 
+    top: 9px; 
+    left: 520px;
+    float: right;
+}
+.flex-filter{
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    width:1290px;
+    height:50px;
+    margin: auto;
+    align-items: left;
+    justify-content: flex-start;
+    box-shadow: 5px 10px 10px 0px #888888;
+    padding: 10px;
+    color:#5A5A5A;
+}
+.bottom-left{
+    color: #505050;
+    margin:20px  0.3px 0px -50px;
+    background: #fff;
+    width: 250px;
+    height: 15px;
+    font-size: 13px;
+}
+.flex-purchase{
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    width:1290px;
+    height:120px;
+    margin: auto;
+    box-shadow: 5px 10px 18px #888888;
+    padding: 10px;
+    align-items:center;
+    justify-content:space-between;
+    color:#505050
+}
+.purchase1{
+    color: #505050;
+    margin:120px 90px 80px -460px;
+    background: #fff;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+}
+.flex-purchase p{
+    margin:0px 0px 40px 0px;
+}
+.approved1{
+    color: #505050;
+    background: #fff;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    float: right;
+    margin:0px 50px 0px 0px;
+}
+.round{
+    width:10px;
+    height: 10px;
+    margin:-15px 350px 50px 210px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #FFC60A;
+}
+.approved1 p{
+    margin:0px 0px 0px 10px;
+ }
+
+.approved2{
+    color: #505050;
+    background: #fff;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    float: right;
+
+}
+.round1{
+    width:10px;
+    height: 10px;
+    margin:-15px 350px 50px 210px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #24D081;
+}
+.approved2 p{
+    margin:0px 0px 0px 90px;
+ }
+
+.approved3{
+    color: #505050;
+    background: #fff;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    float: right;
+}
+.round2{
+    width:10px;
+    height: 10px;
+    margin:-18px 350px 50px 210px;
+    border:#CB9928;
+    border-radius: 50%;
+    display: inline-block;
+    background: #D0C824;
+}
+.approved3 p{
+    margin:0px 0px 0px 120px;
+ }
+
+.approved4{
+    color: #505050;
+    background: #fff;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    float: right;
+
+}
+.round3{
+        width:10px;
+        height: 10px;
+        margin:-18px 350px 50px 210px;
+        border:#D03E24;
+        border-radius: 50%;
+        display: inline-block;
+        background: #D03E24;
+ }
+ .approved4 p{
+    margin:0px 0px 0px 100px;
+ }
+.show{
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    width:1290px;
+    height:30px;
+    margin:auto;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 5px 10px 18px #888888;
+    padding: 10px;
+    color:#5A5A5A;
+}
+.show p{
+    margin:0px 0px 0px 599px;
+}
+
