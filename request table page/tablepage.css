@@ -1,0 +1,148 @@
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body{
+  font-family: "Roboto";
+  background-color: #F6F8F9;
+  width: 100%;
+  margin:auto;
+}
+.header{
+    margin: auto;
+    padding: 0px;
+    background: #fff;
+    width: 100%;
+}
+.header-right{
+    display: block;
+    float:right;
+   background: #fff;
+   width:160px;
+   text-align: center;
+   margin: 0px 0px 0px 0px;
+
+}
+.photo{
+    border-radius: 50%;
+}
+.request{
+    background: #fff;
+    width:90%;
+    height:80px;
+    margin: auto;
+    box-shadow: 5px 10px 18px #888888;
+    padding: 20px 0px 0px 0px; 
+}
+.request table{
+    width: 100%;
+}
+.request th p{
+    border-bottom: 3px solid #32BDD2;
+    margin: 0px 0px 0px 30px;
+
+}
+.request th input[type="submit"]{
+    border: none;
+    outline:none;
+    height: 40px;
+    background:#32BDD2;
+    color:#fff;
+    font-size:15px;
+    border-radius:20px;
+    width: 150px;
+}
+.request th input[type="text"] {
+    right:1450px;
+    border-style: ridge;
+    border-radius: 40px;
+    background-color:#fff; 
+    display:block;
+    width:550px;
+    height: 40px;
+    box-sizing: border-box ;
+    margin: 0px 0px 0px 230px;
+}
+.request th img { 
+    position: absolute; 
+    float: right;
+     margin: -30px 0px 0px 259px;
+}
+.filter{
+    border-bottom: 1px solid #FFF2F2;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #fff;
+    width: 90%;
+    margin: auto;
+    box-shadow: 5px 10px 18px #888888;
+  }
+  
+  #filter-img{
+    position: relative;
+    top: 3px;
+    left: 20px;
+    float: left;
+  }
+  
+  .filter-text{
+    position: relative;
+    left: 30px;
+  }
+  
+  #filter-span1{
+  color: #5A5A5A;
+  }
+  
+  #filter-span2{
+    font-size: 12px; 
+    padding-top:3px;
+    color: #505050;
+    font-weight: bold;
+  }
+  .contents{
+    background: #fff;
+    width: 90%;
+    margin: auto;
+    box-shadow: 5px 10px 18px #888888;
+  }
+  .contents table{
+    width: 100%;
+  }
+  .round{
+    width:10px;
+    height: 10px;
+    margin:-15px 0px 50px 500px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #24D081;
+}
+.contents th p{
+  margin:0px 0px 0px 10px; 
+}
+.contents th img{
+  margin: 0px 0px 0px 390px;
+}
+.show-more{
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #fff;
+  width: 90%;
+  margin: auto;
+  box-shadow: 5px 10px 18px #888888;
+}
+.show-more span{
+  position: relative;
+  left: 45%;
+  color:#909090;
+  font-size: 12px;
+  font-weight: bold;
+}
+.show-more img{
+  position: relative;
+  left: 45%;
+  top:3px;
+}
