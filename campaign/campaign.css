@@ -69,5 +69,48 @@ tr{
     margin: 0 10px 0 10px;
   }
   .contents{
-      
+      margin: 0 0 0 5%;
   }
+  .ph{
+    width: 34px;
+    height: 34px;
+  
+  }
+  .flex-program{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .flex-program p{
+    margin: 0 0 0 5%;
+    color: #747474;
+  }
+  .flex-program label{
+    border-bottom: 2px solid purple;
+    color: purple;
+  }
+  .plus img{
+    width:68px;
+    height: 68px;
+    margin: 2%;
+  }
+  .content2{
+    margin: 0 0 0 10%;
+  }
+  .intro h3{
+     color: #000000;
+  }
+  .intro p{
+    color:#565656;;
+ }
+ .airbone{
+  background: purple;
+
+ }
+ .flex-class{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-end;
+ }
