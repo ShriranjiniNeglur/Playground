@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background-color:#505050;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+.loginbox{
+    padding:2%;
+    background: #fff;
+    width:35%;
+    height: 28%;
+    margin:auto;
+    color:#434343;
+    box-shadow:1px 1px 25px #505050;
+    border-radius: 2%;
+}
+.height{
+    min-height: 50vh;
+}
+.forgot label {
+    font-size: 24px;
+    color: #595959;
+    border-bottom:2.5px solid #595959;
+    font-variant-caps: all-petite-caps;
+  }
+  .dsp p {
+    font-size: 15px;
+    color: #747474;
+  }
+
+
