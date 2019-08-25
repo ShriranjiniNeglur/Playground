@@ -20,14 +20,56 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.ListPopupWindow;
 
-public class BurgerMenu extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
 
-    @Override
+
+public class BurgerMenu extends AppCompatActivity{
+
+    implements NavigationView.OnNavigationItemSelectedListener {
+        ListPopupWindow listPopupWindow;
+        TextView options;
+        ImageView filter_icon;
+        ListView box;
+        @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_burger_menu);
+
+        filter_icon=findViewById(R.id.filter_icon);
+        listPopupWindow=new android.widget.ListPopupWindow(getApplicationContext());
+        options=findViewById(R.id.options);
+
+        String[] items={"Clear","Approved","Awaiting","Draft","Rejected"};
+
+        listPopupWindow.setAdapter(new ArrayAdapter(getApplicationContext(),R.layout.list_item,items));
+        listPopupWindow.setAnchorView(filter_icon);
+        listPopupWindow.setModal(true);
+
+        filter_icon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                listPopupWindow.show();
+            }
+        });
+
+
+        box=findViewById(R.id.box);
+        String title[]={"PUR-056-2019","PUR-056-2019","PUR-056-2019","PUR-056-2019"};
+        String date[]={"06-JUL-2019","06-JUL-2019","06-JUL-2019","06-JUL-2019"};
+        String status[]={"Awaiting","approved","Draft","Rejected"};
+
+        ListAdapter listAdapter=new MyListAdapter(getApplicationContext(),title,date,status);
+        box.setAdapter(listAdapter);
+    }
+}
+
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);

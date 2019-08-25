@@ -17,35 +17,46 @@ public class ForgotPassword extends AppCompatActivity {
     TextView text2;
     ImageView img1;
     ImageView img2;
-    EditText emailtext;
+    EditText forgotuser;
     AlertDialog.Builder alertBuilder;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_password);
+
+        forgotuser=findViewById(R.id.forgotuser);
+
         alertBuilder=new AlertDialog.Builder(this);
         final View alertView=getLayoutInflater().inflate(R.layout.pop_up,null);
         alertBuilder.setView(alertView);
         final AlertDialog alertDialog=alertBuilder.create();
-        ContinueBtn=findViewById(R.id.Continubtn);
+
+        ContinueBtn=findViewById(R.id.Continuebtn);
         text1=findViewById(R.id.text1);
         text2=findViewById(R.id.text2);
         img1=findViewById(R.id.img1);
         img2=findViewById(R.id.img2);
+
         text1.setVisibility(View.INVISIBLE);
         text2.setVisibility(View.INVISIBLE);
         img1.setVisibility(View.INVISIBLE);
         img2.setVisibility(View.INVISIBLE);
+
+
         ContinueBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (forgotuser.getText().toString().equals("")) {
 
-                text1.setVisibility(View.VISIBLE);
-                text2.setVisibility(View.VISIBLE);
-                img1.setVisibility(View.VISIBLE);
-                img2.setVisibility(View.VISIBLE);
-                alertDialog.show();
+                    text1.setVisibility(View.VISIBLE);
+                    text2.setVisibility(View.VISIBLE);
+                    img1.setVisibility(View.VISIBLE);
+                    img2.setVisibility(View.VISIBLE);
+
+                } else {
+                    alertDialog.show();
+                }
             }
-        });
+            } );
     }
 }
