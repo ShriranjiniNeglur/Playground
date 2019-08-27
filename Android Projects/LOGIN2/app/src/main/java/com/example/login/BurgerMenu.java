@@ -36,20 +36,20 @@ public class BurgerMenu extends AppCompatActivity implements NavigationView.OnNa
         TextView options;
         ImageView filter_icon;
         ListView box;
-//        Button newBtn;
+        Button newBtn;
         @Override
             protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_burger_menu);
 
-//            newBtn=findViewById(R.id.newBtn);
-//            newBtn.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    Intent intent=new Intent(getApplicationContext(),RecycleView.class);
-//                    startActivity(intent);
-//                }
-//            });
+            newBtn=findViewById(R.id.newBtn);
+            newBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                   Intent intent=new Intent(getApplicationContext(),RecycleView.class);
+                   startActivity(intent);
+               }
+          });
 
             filter_icon = findViewById(R.id.filter_icon);
             listPopupWindow = new android.widget.ListPopupWindow(getApplicationContext());

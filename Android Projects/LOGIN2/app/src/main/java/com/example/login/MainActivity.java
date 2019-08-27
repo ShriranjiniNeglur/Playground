@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                     I1.setVisibility(View.VISIBLE);
                     I2.setVisibility(View.VISIBLE);
                 }else {
-                    Intent intent=new Intent(getApplicationContext(),RecycleView.class);
+                    Intent intent=new Intent(getApplicationContext(),BurgerMenu.class);
                     startActivity(intent);
                 }
             }
