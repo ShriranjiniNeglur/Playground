@@ -1,5 +1,6 @@
 package com.example.login;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -21,6 +22,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -34,10 +36,20 @@ public class BurgerMenu extends AppCompatActivity implements NavigationView.OnNa
         TextView options;
         ImageView filter_icon;
         ListView box;
+//        Button newBtn;
         @Override
             protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_burger_menu);
+
+//            newBtn=findViewById(R.id.newBtn);
+//            newBtn.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    Intent intent=new Intent(getApplicationContext(),RecycleView.class);
+//                    startActivity(intent);
+//                }
+//            });
 
             filter_icon = findViewById(R.id.filter_icon);
             listPopupWindow = new android.widget.ListPopupWindow(getApplicationContext());
