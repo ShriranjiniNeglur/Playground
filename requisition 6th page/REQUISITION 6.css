@@ -1,0 +1,142 @@
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+body{
+    font-family: "Roboto";
+    background-color: #F6F8F9;
+    width: 100%;
+    margin:auto;
+  }
+  .container{
+    background: #FCFCFC;
+    display: flex;
+    width:95%;
+     height: 100%;
+    margin: auto;
+    box-shadow: 0px 0px 5px grey;
+    /* padding: 2%;  */
+  }
+  .left{
+    width:7%;
+    height:70%;
+    float: left;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; 
+  }
+  .text{
+    margin-top: 80%; 
+}
+.text p{
+   transform: rotate(-90deg);
+}
+.icon{
+   width: 90px;
+   height: 500px;
+   margin-top: 35%;
+}
+.container2{
+  width: 90%;
+  margin: auto;
+  margin-right: 1%;
+  padding-top: 2%;
+}
+.Preview p{
+  padding: 1%;
+}
+.note p{
+  padding: 1%;
+}
+.note{
+  padding: 0 0 0 0;
+}
+.items p{
+  padding: 1% ;
+}
+.flex-items{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #747474;
+  font-size: 15px;
+  padding: 1.5%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-bottom: 1px solid #D5E2E8;
+}
+.last-one{
+  margin-left: 18%;
+}
+.attach{
+  border: 1px solid #D5E2E8;
+  width:40%;
+  margin-bottom:2%;
+  margin-left: 1%;
+}
+.file{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fcfcfc;
+  color:#565656;
+  border-bottom: 1px solid #D5E2E8;
+  padding:0px 10px;
+}
+.lorem{
+  padding:0 0 0 5px;
+}
+.flex-people{
+  display: flex;
+  flex-direction: row;
+  background: #fcfcfc;
+  border: 1px solid #D5E2E8;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  padding: 1%;
+  margin-left: 1%;
+}
+.people img{
+  border-radius: 50%;
+ 
+}
+.people p{
+  float: right;
+  color:#747474
+  
+}
+.save{
+  display: flex;
+  background-color: #fcfcfc;
+  color: #595959;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 15%;
+  padding: 1%;
+  
+} 
+ .save p{
+  margin-left: 72%; 
+  color: #32BDD2;
+  font-size: 12px ;
+  border-bottom :1.8px  solid #32BDD2;
+}
+.save span{
+   /* padding: 70px 0px 0px 0px;  */
+  font-size: 18px;
+  border-bottom: 1.8px solid #595959;
+} 
+.button1{
+  background: #32BDD2 ;
+  border: 2px solid #32BDD2;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px #32BBD2;
+  color: #fff;
+  padding: 1%;
+}
+
+  
