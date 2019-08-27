@@ -7,16 +7,15 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListAdapter;
 import android.widget.TextView;
-
 class MyListAdapter extends BaseAdapter {
-    String titles[]={}, dates[]={}, status[]={};
+    String titles[]={}, dates[]={}, statuss[]={};
     private Context context;
 
     public MyListAdapter(Context context, String[] title, String[] date, String[] status) {
         this.context=context;
         this.titles=title;
         this.dates=date;
-        this.status=status;
+        this.statuss=status;
     }
     @Override
     public int getCount() {
@@ -39,7 +38,7 @@ class MyListAdapter extends BaseAdapter {
         status=view.findViewById(R.id.status);
         title.setText(String.valueOf(titles[position]));
         date.setText(String.valueOf(dates[position]));
-        status.setText(String.valueOf(status[position]));
+        status.setText(String.valueOf(statuss[position]));
         return view;
     }
 }
