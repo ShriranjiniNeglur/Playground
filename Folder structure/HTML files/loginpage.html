@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login page</title>
+    <link rel="stylesheet" type="text/css" href="../CSS files/loginpage.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="height"></div>
+        <div class="main1">
+            <div class="login">
+                <label><b>LOGIN</b></label>
+            </div>
+            <div class="email">
+                <p>Email or Username</p>
+                <div class="text">
+                    <input type="text">
+                </div>
+               
+            </div>
+            <div class="password">
+                <p>Password</p>
+                <div class="password-text">
+                    <input type="password" placeholder="*********">
+                </div>
+                
+            </div>
+            <div style="clear: both"></div><br>
+            <div class="container" style="background-color:#fff">
+                <input type="checkbox" name="" value="rme">
+                <span> Remember me</span>
+                <span class="psw"> <a href="fotgotpassword.html"> Forgotpassword ?</a></span>
+            </div><br>
+            <button class="button" type="button" onclick="init()">LOGIN</button>
+
+        </div>
+
+    </div>
+
+</body>
+<script>
+     
+    function init() {
+        location.replace("loginerror.html");
+    }
+    console.log('move to login1 page');
+
+</script>
+
+
+</html>

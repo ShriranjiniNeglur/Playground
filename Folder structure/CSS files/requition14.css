@@ -1,0 +1,163 @@
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+body{
+    font-family: "Roboto";
+    background-color: #F6F8F9;
+    width: 100%;
+    margin:auto;
+  }
+  .header{
+    margin: auto;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 0px 5px grey;
+    padding: 1%;
+    
+  }
+  .burger-menu{
+      width:10%;
+      float: left;
+  }
+  .burger-icon {
+    width:34px;
+    height: 34px;
+    alt:"burger-menu";
+    
+  }
+  .user-menu{
+    width:90%;
+    float:right;
+    
+}
+  .user-menu1{
+      float: right;
+
+  }
+  .user-menu2{
+      float:right;
+
+  }
+  .user-menu3{
+      float: right;
+
+  }
+  .user-menu p{
+      float: right;
+  }
+  .user-image{
+    width:34px;
+    height: 34px;
+    alt:"user-menu";
+    float: right;
+    border-radius: 50%;
+    margin-right: 1%;
+  }
+  .user-icon{
+    width:8px;
+    height: 8px;
+    alt:"user-menu";
+    float: right;
+  }
+.flex-user{
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end;
+    width: 90%;
+}
+.height{
+    min-height: 3vh;
+  }
+  .container{
+    background: #FCFCFC;
+    display: flex;
+    width:95%;
+     height: 100%;
+    margin: auto;
+    box-shadow: 0px 0px 5px grey;
+    /* padding: 2%;  */
+  }
+  .left{
+    width:7%;
+    height:70%;
+    float: left;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; 
+  }
+  .text{
+    margin-top: 80%; 
+}
+.text p{
+   transform: rotate(-90deg);
+}
+.icon{
+   width: 90px;
+   height: 500px;
+   margin-top: 35%;
+}
+.flex-note{
+    display: flex;
+    flex-direction: column;
+    background: #FCFCFC;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 3%;
+    margin-top: 2%;
+    padding-top: 1%;
+}
+.flex-note p{
+    padding: 1%;
+    
+}
+
+.flex-note input[type="text"]{ 
+    border:solid 1px #B5B5B5;
+    border-radius: 3%;
+    width: 70%;
+    height: 120px;
+    margin-top: 2%;
+}
+.note{
+    width: 100%;
+}
+.radio{
+    margin: 0px;
+    padding: 0px;
+    background: #fcfcfc;
+    color: #747474;
+    margin-top: 2%;
+}
+.save{
+    display: flex;
+    background-color: #fcfcfc;
+    color: #595959;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1%;
+    width: 100%;
+    
+  } 
+.save span{
+    font-size: 18px;
+    border-bottom: 1.8px solid #595959;
+  } 
+  .button1{
+    background: #32BDD2 ;
+    border: 2px solid #32BDD2;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px #32BBD2;
+    color: #fff;
+    padding: 1%;
+    width: 10%;
+     
+  }
+  .requester{
+    margin-top: 3%;
+    width: 100%;
+  }

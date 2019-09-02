@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Inbox</title>
+    <link rel="stylesheet" href="../CSS files/inbox.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="header">
+        <div class="burger-menu">
+
+            <img src="../icons/request-icons-02.png" class="burger-icon">
+        </div>
+        <div class="flex-user">
+            <img src="../icons/pexels-photo-674010 - Copy.jpeg" class="user-image">
+            <p style="margin-right: 1%;">Shriranjini</p>
+            <img src="../icons/request-icons-05.png" class="user-icon">
+
+        </div>
+
+    </div>
+    <div class="flex-home">
+        <div class="arrow">
+            <img src="../icons/request-icons-18.png" height="18px" width="18px" />
+        </div>
+        <div class="home" onclick="init();">
+            <img src="../icons/request-icons-19.png" height="42px" width="42px" />
+        </div>
+        <div class="msg">
+            <img src="../icons/request-icons-26.png" height="42px" width="42px" />
+        </div>
+        <div class="calender">
+            <img src="../icons/request-icons-21.png" height="42px" width="42px" />
+        </div>
+        <div class="pencil">
+            <img src="../icons/request-icons-23.png" height="42px" width="42px" />
+
+        </div>
+        <div class="curve">
+            <img src="../icons/request-icons-22.png" height="42px" width="42px" />
+        </div>
+    </div>
+    <div class="ht"></div>
+    <div class="container">
+        <div class="note">
+            <p
+                style="font-size: 15px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                <b>INBOX</b></p>
+            <p style="color: #747474;font-size: 15px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis, tortor sit amet tempor
+                vehicula..</p>
+        </div>
+        <div class="public">
+            <button class="button-public" id="publicbtn">PUBLIC</button>
+            <button class="button-private" ondblclick="privateclick();" onclick="private();"
+                id="privatebtn"><b>PRIVATE</b></button>
+
+        </div>
+        <div style="display: block;" id="peopleblock">
+            <div class="people">
+                <div>
+                    <img src="../icons/Wallpaper-Full-.jpg" class="ppl-img">
+                </div>
+                <span class="round"></span>
+                <div class="name">
+                    <p><b>Anurag Basu</b></p>
+                    <p style="color: #747474;">Lorem ipsum doler sit amet.</p>
+                </div>
+                <div class="down">
+                    <img src="../icons/request-icons-05.png" class="down-menu">
+                </div>
+            </div>
+            <div class="people1">
+                <div>
+                    <img src="../icons/Wallpaper-Full-.jpg" class="ppl-img">
+                </div>
+                <span class="round"></span>
+                <div class="name">
+                    <p><b>Sameera Rautela</b></p>
+                    <p style="color: #747474;">Lorem ipsum doler sit amet.</p>
+                </div>
+                <div class="down">
+                    <img src="../icons/request-icons-16.png" class="down-menu">
+                </div>
+            </div>
+        </div>
+        <div class="you">
+            <p style="color: #707070;"><b style="padding: 1%;">YOU</b></p>
+            <p style="font-size: 12px;color: #747474;padding: 1%;">NOW</p>
+            <div class="you1">
+                <div class="text">
+                    <input type="text">
+                </div>
+                <button class="button">SUBMIT</button>
+            </div>
+        </div>
+        <div class="sameera">
+            <div class="sameera1">
+                <span class="round"></span>
+                <div class="name1">
+                    <p style="color: #707070;"><b>Sameera Rautela</b></p>
+                    <p style="color: #747474">28th Jun 2018 11:47 AM</p>
+                </div>
+            </div>
+        </div>
+        <div class="para">
+            <p>Integer porta tellus a lectus volutpat volutpat. Fusce ac fringilla justo, sed iaculis purus. In
+                laoreet non est<br>
+                vel euismod. Ut gravida pretium justo id pretium. Aliquam elementum pellentesque lectus. Nulla odio
+                elit,<br>
+                feugiat non ultrices ut, condimentum ac augue. Vivamus consectetur posuere dui at consectetur.
+                Nam<br>
+                neque lacus, luctus eget dapibus a, pellentesque ut quam. Duis et tristique tellus. Ut sed mauris
+                nec purus<br>
+                convallis venenatis non at sem. Donec a purus porta, suscipit lacus consectetur, varius nisi.
+            </p>
+        </div>
+        <div class="you-para">
+            <p>YOU</p>
+            <p>27th Jun 2018 03:29 PM</p>
+        </div>
+        <div class="you-para1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis ex semper, faucibus diam a,
+                ultrices<br>
+                nulla. Sed ex augue, feugiat sagittis pulvinar euismod, finibus vel justo. In fermentum auctor nisl
+                nec <br>
+                ullamcorper. Sed odio nisi, pellentesque sed sapien ornare, luctus consequat dolor. Donec lacus
+                massa,<br>
+                eleifend vitae fringilla sit amet, sodales in massa. Fusce varius et quam sit amet condimentum.</p>
+        </div>
+        <div class="last">
+            <p>Sameera Rautela</p>
+            <p>26th Jun 2018 10:18 AM</p>
+        </div>
+        <div class="last-para1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis ex semper, faucibus diam a,
+                ultrices<br>
+                nulla. Sed ex augue, feugiat sagittis pulvinar euismod, finibus vel justo. In fermentum auctor nisl
+                nec <br>
+                ullamcorper. Sed odio nisi, pellentesque sed sapien ornare, luctus consequat dolor. Donec lacus
+                massa,<br>
+                eleifend vitae fringilla sit amet, sodales in massa. Fusce varius et quam sit amet condimentum.</p>
+        </div>
+        <div class="blank"></div>
+        <div style="display: block;" id="peoplesblock">
+            <div class="people1">
+                <div>
+                    <img src="../icons/Wallpaper-Full-.jpg" class="ppl-img">
+                </div>
+                <span class="round"></span>
+                <div class="name">
+                    <p><b>Anurag Basu</b></p>
+                    <p style="color: #747474;">Lorem ipsum doler sit amet.</p>
+                </div>
+                <div class="down">
+                    <img src="../icons/request-icons-16.png" class="down-menu">
+                </div>
+            </div>
+            <div class="people1">
+                <div>
+                    <img src="../icons/Wallpaper-Full-.jpg" class="ppl-img">
+                </div>
+                <span class="round"></span>
+                <div class="name">
+                    <p><b>Sameera Rautela</b></p>
+                    <p style="color: #747474;">Lorem ipsum doler sit amet.</p>
+                </div>
+                <div class="down">
+                    <img src="../icons/request-icons-16.png" class="down-menu">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+
+        function init() {
+            location.replace("requition6th page.html");
+        }
+        console.log('move to request view page');
+
+        var privatebtn = document.getElementById('privatebtn');
+        var peopleblock = document.getElementById('peopleblock');
+        var peoplesblock = document.getElementById('peoplesblock');
+
+
+        privatebtn.addEventListener('click', display);
+
+
+        function display() {
+            peopleblock.style.display = 'none';
+            peoplesblock.style.display = 'none';
+        }
+
+
+        function private() {
+            document.getElementById("publicbtn").style.color = " #245070";
+            document.getElementById("publicbtn").style.backgroundColor = " #fff";
+            document.getElementById("privatebtn").style.color = " #fff";
+            document.getElementById("privatebtn").style.backgroundColor = " #245070";
+        }
+        function privateclick() {
+            document.getElementById("publicbtn").style.color = " #fff";
+            document.getElementById("publicbtn").style.backgroundColor = " #245070";
+            document.getElementById("privatebtn").style.color = " #245070";
+            document.getElementById("privatebtn").style.backgroundColor = " #fff";
+            peopleblock.style.display = 'block';
+            peoplesblock.style.display = 'block';
+            
+        }
+    </script>
+</body>
+
+</html>

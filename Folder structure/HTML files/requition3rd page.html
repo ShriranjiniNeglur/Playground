@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Requisition dropfile</title>
+    <link rel="stylesheet" type="text/css" href="../CSS files/requition3rd page.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="burger-menu">
+            <img src="../icons/request-icons-02.png" class="burger-icon">
+        </div>
+        <div class="flex-user">
+            <img src="../icons/pexels-photo-674010.jpeg" class="user-image">
+            <p style="margin-right: 1%;">Shriranjini</p>
+            <img src="../icons/request-icons-05.png" class="user-icon">
+        </div>
+    </div>
+
+    <div class="height"></div>
+
+    <div class="container">
+
+        <div class="left">
+            <p>REQUISITION</p>
+            <img src="../icons/request-image-32.png" class="icon">
+        </div>
+        <div class="right">
+            <div class="right-inside">
+                <div class="right-inside1">
+                    <div class="inside-content">
+                        <p style="font-size: 18px; color:#505050;">
+                            ATTACHMENTS
+                        </p>
+                        <p style="font-size: 14px; color: #747474;line-height: 22px;">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.</p>
+                    </div>
+
+                </div>
+                <div class="drop1">
+                    <div class="drop2">
+                        <div class="drop-file">
+                            <p style="font-size: 15px; "><b>Select a file from my
+                                    computer.</b></p>
+                            <p style="font-size: 12px; "> Maximum allowed size is 5MB per file.
+                                Only documents like pdf, docx, ppt, xls etc are allowed.
+                            </p>
+                            <button id="browser">BROWSE</button>
+                        </div>
+
+                        <div class="drop-right">
+
+                            <div class="drop-right1">
+
+                                <img src="../icons/request-icons-06.png" height="40px" width="40px">
+                                <p style="color: #fff;">Drop a file here</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="browser" id="browserblock">
+                        <div class="browser-bottom">
+                            <div class="browser-file">
+                                <div class="file-content">
+                                    <div class="file-doc">
+                                        <p>abc0037429023.doc</p>
+                                        <p>976 KB</p>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <input type="text" placeholder="write the description…">
+                                </div>
+                            </div>
+                            <div class="upload">
+                                <button id='uploadelement'>UPLOAD</button>
+                            </div>
+                        </div>
+                        <div class="error">
+                            <img src="../icons/request-icons-07.png" height="20px" width="20px">
+                            <p style="color:#BF574A; font-size:10px;">This field is required.</p>
+                        </div>
+                    </div>
+                    <div class="upload-click" id="uploadblock">
+                        <div class="upload-content">
+                            <div class="upload-file">
+                                <div class="file1">
+                                    <p>abc0037429023.doc</p>
+                                    <p>988 KB</p>
+                                </div>
+                                <div style="color:#747474;padding: 1%">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="delete">
+                                <img src="../icons/request-icons-15.png" height="25px" width="25px" />
+                            </div>
+                        </div>
+                        <div class="upload-content">
+                            <div class="upload-file">
+
+                                <div class="file1">
+                                    <p>abc0037429023.doc</p>
+                                    <p>988 KB</p>
+                                </div>
+
+                                <div style="color:#747474;padding:1%;">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="delete">
+                                <img src="../icons/request-icons-15.png" height="25px" width="25px" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="save">
+                <span onclick="save();">SAVE DRAFT</span>
+                <p onclick="back();"> <b>BACK</b></p>
+                <button class="button1" onclick="next();"> NEXT -></button>
+            </div>
+        </div>
+    </div>
+    <script>
+            var browsebutton = document.getElementById('browser');
+            var browsedisplay = document.getElementById('browserblock');
+            var uploaddisplay = document.getElementById('uploadblock');
+            var uploadbutton = document.getElementById('uploadelement');
+      
+            browsebutton.addEventListener('click', display);
+            uploadbutton.addEventListener('click', view);
+      
+            function display() {
+                browserblock.style.display = "block";
+            }
+            function view() {
+                browserblock.style.display = "none";
+                uploadblock.style.display = "block";
+            }
+            function back() {
+              window.location.assign('request form 2.html');
+            }
+            function save() {
+              window.location.assign('Acknowledgement.html');
+            }
+            function next() {
+              window.location.assign('requition4th page.html');
+            }
+          </script>
+</body>
+
+</html>

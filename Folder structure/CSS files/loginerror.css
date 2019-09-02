@@ -1,0 +1,68 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f6f8f9;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main{
+    background: #fff;
+    width:90%;
+    height: 600px;
+    border-radius: 5%;
+    margin: auto;
+}
+.height{
+  min-height: 20vh;
+}
+.main1{
+    background: #fff;
+    width: 50%;
+    margin: auto;
+}
+.login{
+    width: 90%;
+}
+.login label{
+    border-bottom: 2px solid #707070;
+}
+.email{
+ margin-top: 4%;
+}
+.text [type="text"] {
+    width: 70%;
+    height: 20px;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    outline: none;
+}
+.password-text [type="password"]{
+    width: 70%;
+    height: 20px;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    outline: none;
+} 
+.psw{
+    width: 90%;
+}
+.psw a {
+    float: right;
+    color:#505050;
+    position: absolute;
+  }
+  .container {
+    text-align: left;
+    position: relative;
+    margin-left: 17%;
+  }
+ .button { 
+  border: none;
+  outline:none;
+  background:#32BDD2;
+  box-shadow: 2px 2px 2px #32bdd2;
+  color:#fff;
+  font-size:12px;
+  width: 30%;
+  padding: 12px;
+  border-radius:20px;
+ }

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Requisition approval</title>
+    <link rel="stylesheet" type="text/css" href="../CSS files/requition5th page.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="burger-menu">
+            <img src="../icons/request-icons-02.png" class="burger-icon">
+        </div>
+        <div class="flex-user">
+            <img src="../icons/pexels-photo-674010.jpeg" class="user-image">
+            <p style="margin-right: 1%;">Shriranjini</p>
+            <img src="../icons/request-icons-05.png" class="user-icon">
+        </div>
+    </div>
+
+    <div class="height"></div>
+    <div class="container">
+
+        <div class="left">
+
+            <div class="text">
+                <p><b>REQUISITION</b></p>
+            </div>
+
+            <!-- <div class="number-icon"> -->
+            <img src="../icons/request-image-33.png" class="icon">
+            <!-- </div> -->
+        </div>
+        <div class="inside-right">
+            <div class="flex-item">
+                <div>
+
+                    <p
+                        style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                        <B>APPROVAL(S)</B></p>
+                    <P style="color: #747474;line-height: 1.6;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </P>
+                </div>
+                <div class="flex-plus">
+                    <p
+                        style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                        ADD APPROVER</p>
+                    <img src="../icons/request-icons-10.png" id="myModalbtn" width="37" height="37">
+                </div>
+            </div>
+            <div class="flex-people1">
+                <div class="people1">
+                    <img src="../icons/Wallpaper-Full-.jpg" width="40" height="40">
+                    <span>
+                        <p>Luke Ray<br>
+                            Lorem ipsum doler sit amet.</p>
+                    </span>
+                </div>
+                <img src="../icons/request-icons-24.png" width="30" height="30">
+            </div>
+            <div class="flex-people">
+                <div class="people">
+                    <img src="../icons/wallpaper-hd.jpg" width="40" height="40">
+                    <span>
+                        <p>Daisy Lake<br>
+                            Lorem ipsum doler sit amet.</p>
+                    </span>
+                </div>
+                <img src="../icons/request-icons-24.png" width="30" height="30">
+            </div>
+
+
+        </div>
+
+        <div class="save">
+            <span onclick="save();"> SAVE DRAFT</span>
+            <p onclick="back();"> <b>BACK</b></p>
+            <button class="button1" onclick="next();"> NEXT -></button>
+        </div>
+
+
+    </div>
+    <div class="modal" id="myModal">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="error-header">
+                        <span class="closebtn"> <img src="../icons/request-icons-13.png" width="20" height="20"> </span>
+                        <p><b>ADD ITEM</b></p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="search">
+                        <input type="text" placeholder="Search" id="search" />
+                        <img src="../icons/request-icons-03.png" class="search-icon">
+                    </div>
+                    <div class="modal-dialog-modal-dialog-scrollable" id="searchshow">
+                        <div class="flex-people">
+                            <div class="people">
+                                <img src="../icons/bird-wallpaper.jpg" width="40" height="40">
+                                <span>
+                                    <p>Mark Smith<br>
+                                        Lorem ipsum doler sit amet.</p>
+                                </span>
+                            </div>
+                            <img src="../icons/request-icons-10.png" width="30" height="30">
+                        </div>
+                        <div class="flex-people">
+                            <div class="people">
+                                <img src="../icons/bird-wallpaper.jpg" width="40" height="40">
+                                <span>
+                                    <p>Mark Smith<br>
+                                        Lorem ipsum doler sit amet.</p>
+                                </span>
+                            </div>
+                            <img src="../icons/request-icons-10.png" width="30" height="30">
+                        </div>
+                        <div class="flex-people">
+                            <div class="people">
+                                <img src="../icons/bird-wallpaper.jpg" width="40" height="40">
+                                <span>
+                                    <p>Mark Smith<br>
+                                        Lorem ipsum doler sit amet.</p>
+                                </span>
+                            </div>
+                            <img src="../icons/request-icons-10.png" width="30" height="30">
+                        </div>
+                        <div class="flex-people">
+                            <div class="people">
+                                <img src="../icons/bird-wallpaper.jpg" width="40" height="40">
+                                <span>
+                                    <p>Mark Smith<br>
+                                        Lorem ipsum doler sit amet.</p>
+                                </span>
+                            </div>
+                            <img src="../icons/request-icons-10.png" width="30" height="30">
+                        </div>
+                       
+                    </div>
+                    <!-- <div style="margin-left: 30%;direction: none;" id="notfound">
+                        <img src="../icons/request-icons-04.png" width="170" height="170">
+                        <p style="color: #747474">
+                           <b style="margin-left: 4%;"> NO RESULTS FOUND</b>
+                        </p>
+                        <P style="color: #747474;line-height: 16px;">We can't any item matching</P>
+                        <p  style="color: #747474;line-height: 16px;margin-left: 8%;">your search</p>
+                    </div> -->
+    
+                </div>
+                <div class="modal-footer">
+                    <div style="display: flex;flex-direction:row;align-items: center;justify-content: space-between;">
+                    <div>
+                        <p style="float: left;border-bottom: 2.5px solid  #747474; cursor: pointer;" id="cancel">Cancel
+                        </p>
+                    </div>
+                    <div style="margin-left: 65%;"><button style="border: 1px dashed #32BBd2;background: #fff;border-radius: 10px;">1 person search</button></div>
+                    <div style="float: right;cursor: pointer;"><button class="buttonbtn" id="done">Done</button> </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+    <script>
+            var search = document.getElementById('search');
+           var searchshow =document.getElementById('searchshow');
+           var notfound =document.getElementById('notfound');
+        
+           search.addEventListener('click',show);
+           function show(){
+            searchshow.style.display = 'none';
+            notfound.style.display ='block';
+           }
+
+        var myModalbtn = document.getElementById('myModalbtn');
+        var done = document.getElementById('done');
+        var cancel = document.getElementById('cancel');
+        var myModal = document.getElementById('myModal');
+        var closebtn = document.getElementsByClassName('closebtn')[0];
+
+        myModalbtn.addEventListener('click', Openmodal);
+        closebtn.addEventListener('click', closemodal);
+        cancel.addEventListener('click', closemodal);
+        done.addEventListener('click', closemodal);
+
+        function Openmodal() {
+            myModal.style.display = 'block';
+        }
+        function closemodal() {
+            myModal.style.display = 'none'
+        }
+        function back() {
+                   window.location.assign('requition4th page.html');
+                 }
+                 function save() {
+                   window.location.assign('Acknowledgement.html');
+                 }
+                 function next() {
+                   window.location.assign('REQUISITION 6.html');
+                 }
+         </script>
+</body>
+
+</html>
