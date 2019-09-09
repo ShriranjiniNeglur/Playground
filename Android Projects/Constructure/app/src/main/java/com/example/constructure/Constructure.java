@@ -1,38 +1,28 @@
 package com.example.constructure;
 
-public class Constructure {
+import android.content.Context;
+import android.os.Bundle;
+import android.widget.Toast;
 
-    private String Name;
-    private int age;
-    private String mail;
+import androidx.appcompat.app.AppCompatActivity;
 
-    public Constructure(String name, int age, String mail) {
-        Name = name;
-        this.age = age;
-        this.mail = mail;
+import static android.widget.Toast.LENGTH_LONG;
+
+public class Constructure extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+    }
+      Constructure() {
+//      System.out.println("contrcuture");
     }
 
-    public String getName() {
-        return Name;
-    }
 
-    public void setName(String name) {
-        Name = name;
-    }
+    public void object(Context applicationContext) {
+            Toast.makeText(applicationContext, "This is constrcuture demo", LENGTH_LONG).show();
 
-    public int getAge() {
-        return age;
-    }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getMail() {
-        return mail;
-    }
-
-    public void setMail(String mail) {
-        this.mail = mail;
     }
 }
