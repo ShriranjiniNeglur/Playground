@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,12 +17,14 @@ public class MainActivity extends AppCompatActivity {
     Button add;
     Button remove;
     TextView array;
+    EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         show = findViewById(R.id.show);
+        editText = findViewById(R.id.editText);
         add = findViewById(R.id.add);
         remove = findViewById(R.id.remove);
         array = findViewById(R.id.array);
@@ -43,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                student.add("baju\n");
+                String content = editText.getText().toString();
+                array.setText(content);
 
             }
         });
