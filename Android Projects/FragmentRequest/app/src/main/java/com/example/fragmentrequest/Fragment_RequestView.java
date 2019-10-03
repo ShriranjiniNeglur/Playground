@@ -37,9 +37,11 @@ public class Fragment_RequestView extends Fragment {
         Requestdate=view.findViewById(R.id.submitdate);
         status=view.findViewById(R.id.status_view);
 
-        Requestno.setText(requestModel.getRequestNumber());
-        Requestdate.setText(requestModel.getRequestDate());
-        status.setText(requestModel.getRequestStatus().toString());
+        if (requestModel!=null) {
+            Requestno.setText(requestModel.getRequestNumber());
+            Requestdate.setText(requestModel.getRequestDate());
+            status.setText(requestModel.getRequestStatus().toString());
+        }
 
 
         items = view.findViewById(R.id.items);
