@@ -10,13 +10,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.carmel.bootcamp.shriranjini.InviteDelegates.InviteDelegatesForm;
 import com.carmel.bootcamp.shriranjini.InviteDelegates.SearchPeopleForm;
 import com.carmel.bootcamp.shriranjini.InviteDelegates.SelectPeopleForm;
 
 
 public class SelectPeople extends Fragment {
 private View view;
-SearchPeopleForm searchPeopleForm;
+InviteDelegatesForm  inviteDelegatesForm;
 ImageView SearchIcon;
 
 
@@ -25,20 +26,20 @@ ImageView SearchIcon;
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
        view= inflater.inflate(R.layout.fragment_select_people, container, false);
-        SearchIcon=view.findViewById(R.id.SearchIcon);
-        SearchIcon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (searchPeopleForm!=null){
-                    searchPeopleForm.onclickSearchicon((SelectPeopleForm) searchPeopleForm);
-                }
-            }
-        });
+//        SearchIcon=view.findViewById(R.id.SearchIcon);
+//        SearchIcon.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (inviteDelegatesForm!=null){
+//                    inviteDelegatesForm.onclickSearchicon(inviteDelegatesForm);
+//                }
+//            }
+//        });
 
 
         return view;
     }
- public  void setSearchPeopleForm(SearchPeopleForm searchPeopleForm){
-        this.searchPeopleForm=searchPeopleForm;
- }
+// public  void setSearchPeopleForm(InviteDelegatesForm inviteDelegatesForm){
+//        this.inviteDelegatesForm=inviteDelegatesForm;
+// }
 }

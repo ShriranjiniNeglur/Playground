@@ -17,7 +17,6 @@
             android:background="@drawable/outersborder">
 
             <EditText
-                android:id="@+id/editText"
                 android:layout_width="313dp"
                 android:layout_height="30dp"
                 android:layout_marginStart="16dp"
@@ -185,7 +184,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout5"
+                android:id="@+id/MarkLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -209,7 +208,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/imageView10"
+                    android:id="@+id/MarkDeleteicon"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginStart="52dp"
@@ -247,7 +246,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout2"
+                android:id="@+id/LukeLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -255,7 +254,7 @@
                 android:layout_marginTop="32dp"
                 android:background="@drawable/peopleborder"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+                app:layout_constraintTop_toBottomOf="@+id/DaisyLayout">
 
                 <ImageView
                     android:id="@+id/imageView4"
@@ -271,7 +270,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/LukeDeleteicon"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginStart="52dp"
@@ -311,7 +310,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout3"
+                android:id="@+id/DaisyLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -319,7 +318,7 @@
                 android:layout_marginTop="32dp"
                 android:background="@drawable/peopleborder"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+                app:layout_constraintTop_toBottomOf="@+id/MarkLayout">
 
                 <ImageView
                     android:id="@+id/imageView7"
@@ -335,7 +334,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/imageView8"
+                    android:id="@+id/DaisyDeleteicon"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginStart="52dp"
@@ -381,10 +380,10 @@
                 android:layout_marginTop="77dp"
                 android:background="@drawable/textborder"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+                app:layout_constraintTop_toBottomOf="@+id/LukeLayout">
 
                 <TextView
-                    android:id="@+id/textView19"
+                    android:id="@+id/CancelText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
@@ -406,7 +405,7 @@
                 android:layout_marginTop="76dp"
                 android:background="@drawable/selectborder"
                 app:layout_constraintStart_toEndOf="@+id/constraintLayout4"
-                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+                app:layout_constraintTop_toBottomOf="@+id/LukeLayout">
 
                 <TextView
                     android:id="@+id/textView14"

@@ -11,11 +11,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.carmel.bootcamp.shriranjini.InviteDelegates.FoundPeopleForm;
+import com.carmel.bootcamp.shriranjini.InviteDelegates.InviteDelegatesForm;
 
 
 public class SearchPeople extends Fragment {
     private View view;
-    FoundPeopleForm foundPeopleForm;
+    InviteDelegatesForm inviteDelegatesForm;
     ImageView findicon;
 
 
@@ -32,15 +33,15 @@ public class SearchPeople extends Fragment {
        findicon.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               if (foundPeopleForm!=null){
-                   foundPeopleForm.onClicktoFindPeople(foundPeopleForm);
+               if (inviteDelegatesForm!=null){
+                   inviteDelegatesForm.onClicktoFindPeople(inviteDelegatesForm);
                }
            }
        });
 
         return view;
     }
-   public void setFoundPeopleForm(FoundPeopleForm foundPeopleForm){
-        this.foundPeopleForm=foundPeopleForm;
+   public void setFoundPeopleForm(InviteDelegatesForm inviteDelegatesForm){
+        this.inviteDelegatesForm=inviteDelegatesForm;
    }
 }

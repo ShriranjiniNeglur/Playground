@@ -17,7 +17,7 @@
             android:background="@drawable/outersborder">
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/SearchIcon"
                 android:layout_width="313dp"
                 android:layout_height="30dp"
                 android:layout_marginStart="16dp"
@@ -157,7 +157,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
-                    android:id="@+id/textView19"
+                    android:id="@+id/CancelText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"

@@ -17,7 +17,7 @@
             android:background="@drawable/outersborder">
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/SearchIcon"
                 android:layout_width="313dp"
                 android:layout_height="30dp"
                 android:layout_marginStart="16dp"
@@ -45,7 +45,6 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/SearchIcon"
                 android:layout_width="20dp"
                 android:layout_height="30dp"
                 android:layout_marginTop="49dp"
@@ -66,7 +65,7 @@
                 android:textColor="#909090"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText" />
+                app:layout_constraintTop_toBottomOf="@+id/SearchIcon" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -148,7 +147,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
                 <TextView
-                    android:id="@+id/textView19"
+                    android:id="@+id/CancelText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
