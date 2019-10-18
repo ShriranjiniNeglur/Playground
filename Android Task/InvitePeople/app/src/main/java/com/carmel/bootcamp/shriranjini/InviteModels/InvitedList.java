@@ -6,6 +6,11 @@ public class InvitedList implements Serializable {
     String Person_Name;
     String Person_Detail;
 
+    public InvitedList(String peopleNames, String peopleDetails) {
+        Person_Name= peopleNames;
+       Person_Detail = peopleDetails;
+    }
+
     public String getPerson_Name() {
         return Person_Name;
     }
