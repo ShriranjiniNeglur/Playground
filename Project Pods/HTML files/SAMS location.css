@@ -1,0 +1,42 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 600px;
+    width: 80%;
+    float: right;
+}
+.outerblock{
+    background: #32BBd2;
+    width: 100%;
+    /* width: 100px; */
+}
+
+.search {
+    width: 20%;
+    height: 80px;
+    /* margin-top: 10%; */
+    float: left;
+    /* position: relative; */
+}
+
+.search [type="text"] {
+    width: 90%;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #747474;
+    position: relative;
+}
+
+.search-icon {
+    width: 34px;
+    height: 34px;
+    margin-left: -3%;
+    margin-top: 0.3%;
+    position: absolute;
+}
