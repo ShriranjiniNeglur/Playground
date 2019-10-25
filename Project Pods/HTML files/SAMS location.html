@@ -5,17 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAMS map</title>
-    <link rel="stylesheet" type="text/css" href="SAMS location.css">
-    <script src="SAMS location.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS files/SAMS location.css">
+    <script src="../JAVASCRIPT files/SAMS location.js"></script>
+
 </head>
 
 <body>
     <h1>SAMS POD</h1>
     <div class="outerblock">
         <div class="search">
-            <input type="text" placeholder="  Search" />
-            <img src="icons/request-icons-03.png" class="search-icon">
+            <input type="text" placeholder="  Search" id="mySearch" onkeyup="myFunction()" title="Type in a category" />
+            <img src="icons/request-icons-03.png" id="closesearch" class="search-icon">
+            <div id="searchshow" style="display: none; background: #ccc;">
+                <ul id="myMenu">
+                    <li><a href="#">SAMS Pods Hubli Airport Terminal 1</a></li>
+                    <li><a href="#">SAMS Premium pods Hubli Airport Terminal 2</a></li>
+                    <li><a href="#">SAMS Exclusive Pods Hubli Airport Terminal 3</a></li>
+                    <li><a href="#">SAMS Premium with bubks Pods Hubli Airport Terminal 3</a></li>
+                    <li><a href="#">SAMS xclusive Pods Hubli Airport Terminal 4</a></li>
+                    <li><a href="#">SAMS Pods at the floors Hubli Airport Terminal 1</a></li>
+                    <li><a href="#">SAMS Pods Hubli Airport Terminal 3 floor 5</a></li>
+                    <li><a href="#">SAMS Pods Hubli Airport Terminal 4 at floor 3</a></li>
+                    <li><a href="#">SAMS Pods Hubli Airport Terminal 1</a></li>
+                </ul>
+            </div>
         </div>
+        <script>
+            function myFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("mySearch");
+                
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myMenu");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            }
+            var mySearch = document.getElementById('mySearch');
+            var searchshow = document.getElementById('searchshow');
+            mySearch.addEventListener('click',show);
+            function show(){
+                searchshow.style.display = 'block';
+            }
+            var closesearch = document.getElementById('closesearch');
+            var searchshow = document.getElementById('searchshow');
+            closesearch.addEventListener('click',display);
+            function display(){
+                searchshow.style.display = 'none';
+            }
+           
+        </script>
+        <!-- <div class="list">
+            <p id="demo"></p>
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+            <script>
+
+
+
+                var txt = '{"name":"SAMS Pod", "age":"30km", "city":"New York"}'
+                var obj = JSON.parse(txt);
+                document.getElementById("demo").innerHTML = obj.name + ", " + obj.age + " , " + obj.city;
+                var txt = '{"name":"John", "age":"30km", "city":"New York"}'
+                var obj = JSON.parse(txt);
+                document.getElementById("demo1").innerHTML = obj.name + ", " + obj.age;
+            </script>
+        </div> -->
         <div id="map"> </div>
     </div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH29e5wuvWjfDQjgJhfwBZzWzadI6sLcY&callback=initMap"

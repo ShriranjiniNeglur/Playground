@@ -31,12 +31,14 @@ function initMap() {
         fillColor: '#FF6600',
         fillOpacity: 0.3,
         strokeColor: "#FFF",
-        strokeWeight: 0
+        strokeWeight: 0,
+        Draggable:true
     });
     marker.setMap(map);
     marker.setMap(map);
-    infoWindowLinea.setContent(infoWindowLinea.getContent());
-    google.maps.event.addDomListener(window, 'load', initialize);
+
+   
+
 
 
 }
